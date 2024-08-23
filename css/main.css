@@ -1,0 +1,138 @@
+* {
+	/*внутренний отступ*/ 
+	padding: 0;
+	/*внешний отступ*/ 
+	margin: 0;
+	/*box модель элемента*/ 
+	box-sizing: border-box;
+}
+body {
+	font-family: new;
+	background-color: #81afb5;
+}
+
+@font-face {
+	font-family: new;
+	src: url(../fonts/Bender.otf);
+}
+
+main {
+	width: 70%;
+	padding: 50px;
+/* по горизонтали */
+	margin: auto;
+	background-color: powderblue;
+	box-shadow: 0 0 4px 1px rgb(39 103 107);
+/* гибка сетка */
+	display: flex;
+/* для сохранения текущих размеров объекта*/
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* изменяем тег с "pictures"*/
+.pictures {
+	width: calc(50% - 40px);
+	height: calc((35vw - 40px) / 16 * 9);
+	margin: 10px;
+	background-color: black;
+	box-shadow: 0 0 4px 1px rgb(39 103 107);
+
+	/*отцентровка картинок*/
+	background-position: center;
+	background-size: cover;
+	transition: all 0.5s ease;
+}
+
+.pictures:hover {
+	transform: scale(1.25) rotate(3deg);
+	box-shadow: 0 0 8px 5px rgb(39 103 107);
+}
+
+.photo1 {
+	background-image: url(../img/1.jpg);
+}
+
+.photo2 {
+	background-image: url(../img/2.jpg);
+}
+
+.photo3 {
+	background-image: url(../img/3.jpg);
+}
+
+.photo4 {
+	background-image: url(../img/4.jpg);
+}
+
+.photo5 {
+	background-image: url(../img/5.jpg);
+}
+
+.photo6 {
+	background-image: url(../img/6.jpg);
+}
+
+.photo7 {
+	background-image: url(../img/7.jpg);
+}
+
+.photo8 {
+	background-image: url(../img/8.jpg);
+}
+
+.photo9 {
+	background-image: url(../img/9.jpg);
+}
+
+.photo10 {
+	background-image: url(../img/10.jpg);
+}
+
+.photo11 {
+	background-image: url(../img/11.jpg);
+}
+
+.photo12 {
+	background-image: url(../img/12.jpg);
+}
+
+
+img {
+	height: calc((35vw - 40px) / 16 * 9);
+	width: 100%;
+}
+
+h1 {
+	font-size: 40px;
+	color: white;
+	width: 100%;
+	text-align: center;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.gibberish {
+	font-size: 20px;
+	width: 95%;
+	margin: auto;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.author {
+	font-size: 20px;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	margin-right: auto;
+	bottom: 0;
+	margin-bottom: 0;
+}
+
+a {
+	font-size: 20px;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	margin-right: auto;
+	bottom: 0;
+	margin-bottom: 0;
+}
